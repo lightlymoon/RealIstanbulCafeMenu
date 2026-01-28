@@ -40,8 +40,8 @@ body {
 }
 
 .center-logo {
-  height: 320px;
-  width: 320px;
+  height: 100px;
+  width: 100px;
   margin-top: 5px;
   margin-right: 110px;
 }
@@ -102,7 +102,6 @@ body {
   text-decoration: none;
   color: #1f2a44;
 }
-
 .categories {
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +109,8 @@ body {
 }
 
 .categories button {
+  width: 100%;
+  display: inline-block;
   flex: 1 1 150px;
   padding: 16px 24px;
   border-radius: 22px;

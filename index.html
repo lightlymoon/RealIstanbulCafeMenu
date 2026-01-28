@@ -6,6 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <header class="header">
   <div class="brand">
@@ -15,12 +16,17 @@
       <h3 id="title">Taze ve Günlük</h3>
     </div>
   </div>
-  <div><img class="center-logo" src="logo.png" alt="menulogo"></div>
+
+  <div>
+    <img class="center-logo" src="logo.png" alt="menulogo">
+  </div>
+
   <div class="actions">
     <div class="lang-group">
       <button class="lang-btn" onclick="setLang('tr')">TR</button>
       <button class="lang-btn" onclick="setLang('en')">EN</button>
     </div>
+
     <div class="wp-container">
       <img class="WpIcon" src="whatsappIcon.png" alt="WhatsApp">
       <a class="number" href="tel:+905000000000">+90 500 000 00 00</a>
@@ -31,10 +37,10 @@
 <div class="app">
   <aside class="sidebar">
     <div class="categories">
-      <button onclick="filter('all')">Tümü</button>
-      <button onclick="filter('drinks')">İçecek</button>
-      <button onclick="filter('food')">Yiyecek</button>
-      <button onclick="filter('dessert')">Tatlı</button>
+      <button  onclick="filter('all')">Tümü</button>
+      <button  onclick="filter('drinks')">İçecek</button>
+      <button  onclick="filter('food')">Yiyecek</button>
+      <button  onclick="filter('dessert')">Tatlı</button>
     </div>
   </aside>
 
@@ -42,11 +48,17 @@
     <div class="products" id="list"></div>
   </main>
 </div>
-<center><footer class="footer">© 2026 Real İstanbul Cafe Menu • Dijital Menü Sistemi</footer>
+
+<center>
+  <footer class="footer">
+    © 2026 Real İstanbul Cafe Menu • Dijital Menü Sistemi
+  </footer>
 </center>
 
 <div class="modal" id="modal">
-  <div class="modal-box"><div id="modalContent"></div></div>
+  <div class="modal-box">
+    <div id="modalContent"></div>
+  </div>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
